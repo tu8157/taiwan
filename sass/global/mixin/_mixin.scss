@@ -1,0 +1,11 @@
+// settingフォルダの変数を読み込みます
+
+@use "../setting" as *;
+
+@mixin jptxt($fz:14px,$fw:400,$lh:1.5){
+    font-family: $jp;
+    letter-spacing: 0.025;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
