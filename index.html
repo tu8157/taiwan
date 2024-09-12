@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ここにタイトルがはいります</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <!-- font -->
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'mdb7mag',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
-    <!-- css -->
-    <link href="css/style.css" rel="stylesheet" media="all">
-  </head>
-  <body id="top">
-  
 
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ここにタイトルがはいります</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link href="css/style.css" rel="stylesheet" media="all">
+</head>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/function.js"></script>
-  </body>
+<body id="top">
+  <header class="header">
+    <h1 class="header__ttl"><a href="index.html" class="header__link"><img src="images/logo.svg" alt="Taiwan guide 24"
+          class="header__img"></a></h1>
+    <div class="btn">
+      <div class="btn__top"></div>
+      <div class="btn__bottom"></div>
+    </div>
+    <nav class="gnav">
+      <ul class="gnav__nav">
+        <li class="gnav__list"><a href="index.html" class="gnav__link">トップページ</a></li>
+        <li class="gnav__list">
+          おすすめモデルコース
+          <ul class="gnav__nav2">
+            <li class="ganv__list2"><a href="active/index.html" class="gnav__link2"></a></li>
+            <li class="ganv__list2"><a href="local/index.html" class="gnav__link2"></a></li>
+          </ul>
+        </li>
+        <li class="gnav__list"><a href="" class="gnav__link">
+          <img src="images/book_icon.svg" alt="本のアイコン" class="gnav__book">
+          <div class="gnav__box">
+            <span class="ganv__span">参考書籍</span>
+            『たいわんガイド２４じかん』
+          </div>
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
 </html>
