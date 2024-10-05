@@ -3,5 +3,12 @@
 @use "../global" as *;
 
 body {
+    font-family: $en, $jp, sans-serif;
     color: $black;
+    line-height: 1;
+}
+a {
+    display: block;
+    color: $black;
+    text-decoration: none;
 }

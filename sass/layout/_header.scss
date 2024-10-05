@@ -1,3 +1,54 @@
 //各ファイルは必ず登録済みの変数を最初に読み込みます
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
+
+.header {
+    &__ttl {
+        width: 132.43px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+.book {
+    width: fit-content;
+    position: absolute;
+    top: 98px;
+    right: 25px;
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    &__txt {
+        width: fit-content;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    &__span {
+        -webkit-text-combine: horizontal;
+        -ms-text-combine-horizontal: all;
+        text-combine-upright: all;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        position: relative;
+        
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: block;
+            background: url(../images/book_icon.svg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

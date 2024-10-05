@@ -2,4 +2,202 @@
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
 
+#top {
+    .mv {
+        margin-bottom: 58px;
+    }
+        .mv1 {
+            width: 78vw;
+            height: 107.9487vw;
+            margin-top: 6px;
+            position: relative;
+            &__img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: opacity 2.5s ease-in-out;
+                opacity: 0;
+            }
+        }
+        .mv2 {
+            width: 57.94871vw;
+            height: 36.92307vw;
+            margin-left: auto;
+            margin-top: 8.97435vw;
+            position: relative;
+            &__img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: opacity 2.5s ease-in-out;
+                opacity: 0;
+            }
+        }
 
+        .intro {
+            margin-bottom: 91px;
+            padding: 0 7.94871vw;
+            display: flex;
+            column-gap: 30px;
+            position: relative;
+            &__ttl {
+                margin-top: 10px;
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+                writing-mode: vertical-lr;
+            }
+            &__txt {
+                width: 70vw;
+                max-width: 274px;
+                @include jptxt($lh:2.5);
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 52.82051vw;
+                max-width: 290.51px;
+                height: 4.61538vw;
+                max-height: 25.38px;
+                position: absolute;
+                bottom: min(-12.82051vw, -50px);
+                left: 0;
+                background: url(../images/wave.svg) center center / contain no-repeat;
+            }
+        }
+
+        .about {
+            margin-bottom: 74px;
+            padding-top: 45.64102vw;
+            padding-bottom: 128px;
+            background: url(../images/zenzu_sp.svg) center top / cover no-repeat;
+            &__ttl {
+                width: fit-content;
+                margin: 0 auto 41px;
+                position: relative;
+            }
+            &__ttldeco {
+                @include jptxt(24px, 700, 1);
+                color: $d-pink;
+                position: absolute;
+                top: -20px;
+                left: -15%;
+                transform: rotate(-35deg);
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 33px;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 30%;
+                    left: -45%;
+                    background: $d-pink;
+                    transform: rotate(55deg);
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 33px;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 30%;
+                    right: -35%;
+                    background: $d-pink;
+                    transform: rotate(-65deg);
+                }
+            }
+            &__ttlspan {
+                width: fit-content;
+                margin: 0 auto 23px;
+                padding: 5px;
+                display: block;
+                @include jptxt(20px, 700, 1);
+                background: #fff;
+            }
+            &__ttlbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 24px;
+            }
+            &__ttlspan1 {
+                width: fit-content;
+                display: block;
+                position: relative;
+                @include jptxt(34px, 700, 1);
+                z-index: 2;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: #fff;
+                    z-index: -1;
+                }
+            }
+            &__intro {
+                width: 260px;
+                margin: 0 auto;
+                padding-bottom: 55px;
+                @include jptxt;
+                text-align: center;
+            }
+            &__box {
+                margin-bottom: 65px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__subttl {
+                width: fit-content;
+                margin-bottom: 30px;
+                padding: 7px;
+                background: #fff;
+                @include jptxt(16px, 700, 1);
+                color: $d-pink;
+            }
+            &__bold {
+                margin-bottom: 20px;
+                @include jptxt(22px, 700, 1);
+                text-align: center;
+            }
+            &__subbold {
+                margin-bottom: 10px;
+                display: block;
+                @include jptxt(12px, 700, 1);
+                text-align: center;
+            }
+            &__txt {
+                width: 255px;
+                @include jptxt;
+                text-align: center;
+                &:nth-child(2) {
+                    width: fit-content;
+                }
+            }
+            &__boxbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__pic {
+                width: 102px;
+                height: 143px;
+            }
+        }
+
+        .course {
+            &__ttl {
+               width: 68.71794vw; 
+               max-width: 475px;
+               margin: 0 auto 49px;
+            }
+        }
+
+
+
+}
