@@ -1,3 +1,27 @@
 //各ファイルは必ず登録済みの変数を最初に読み込みます
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
+
+.footer {
+    &__ttl {
+        width: 132.43px;
+        margin: 0 auto 50px;
+    }
+    &__box {
+        margin-bottom: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 34px;
+    }
+    &__txt {
+        @include jptxt(12px, 400, 1);
+    }
+    &__copy {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    &__small {
+        @include jptxt(10px, 400, 1);
+    }
+}

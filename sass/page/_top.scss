@@ -191,13 +191,103 @@
         }
 
         .course {
+            margin-bottom: 100px;
             &__ttl {
                width: 68.71794vw; 
                max-width: 475px;
-               margin: 0 auto 49px;
+               margin: 0 auto 50px;
+            }
+            &__container {
+                margin: 0 30px 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+            &__ttl2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                @include jptxt(16px, 400, 1);
+                &pic {
+                    margin-bottom: 18px;
+                }
+            }
+            &__link {
+                position: relative;
+            }
+            &__more {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                bottom: -15px;
+                right: -20px;
+                background: #fff;
+                border: 1px solid $black;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                font-family: $en;
+                font-weight: 300;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 1px;
+                    background: $black;
+                    position: absolute;
+                    left: 43px;
+                }
+            }
+            &__txt {
+               @include jptxt; 
             }
         }
 
+        .refe {
+            margin-bottom: 70px;
+            padding-top: 117px;
+            padding-bottom: 150px;
+            background: url(../images/book_bgsp.svg) center top / cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            &__ttl {
+                width: fit-content;
+            }
+            &__ttl2 {
+                display: none;
+            }
+            &__pic {
+                width: 200px;
+            }
+            &__container {
+                padding: 0 30px;
+            }
+            &__span {
+                margin-bottom: 10px;
+                display: block;
+                @include jptxt(12px, 500, 1);
+            }
+            &__subttl {
+                margin-bottom: 32px;
+                @include jptxt(28px, 500, 1);
+            }
+            &__info {
+                margin-bottom: 15px;
+                @include jptxt(11px, 400, 1);
+                &:nth-child(3) {
+                    margin-bottom: 40px;
+                }
+            }
+            &__txt {
+                @include jptxt;
+            }
+        }
 
 
 }

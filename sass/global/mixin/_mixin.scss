@@ -2,9 +2,9 @@
 
 @use "../setting" as *;
 
-@mixin jptxt($fz:14px,$fw:400,$lh:1.6){
+@mixin jptxt($fz:14px,$fw:400,$lh:1.7){
     font-family: $jp;
-    letter-spacing: 0.025;
+    letter-spacing: 0.025em;
     font-size: $fz;
     font-weight: $fw;
     line-height: $lh;
