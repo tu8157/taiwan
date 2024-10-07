@@ -250,7 +250,7 @@
         .refe {
             margin-bottom: 70px;
             padding-top: 117px;
-            padding-bottom: 150px;
+            padding-bottom: 130px;
             background: url(../images/book_bgsp.svg) center top / cover no-repeat;
             display: flex;
             flex-direction: column;
@@ -264,6 +264,7 @@
             }
             &__pic {
                 width: 200px;
+                margin-bottom: 20px;
             }
             &__container {
                 padding: 0 30px;
