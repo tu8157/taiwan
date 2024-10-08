@@ -38,11 +38,23 @@
     transform: translateX(100%);
     transition: .3s;
     z-index: 3;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    &__bg {
+        width: 30%;
+        height: 100vh;
+        background: $d-pink;
+    }
+
     &__ttl {
         width: 132.43px;
         margin: 0 auto;
         padding-top: 20px;
     }
+
     &__list {
         &:first-child {
             width: fit-content;
@@ -51,15 +63,30 @@
             font-size: 20px;
             font-weight: 700;
             letter-spacing: 0.15em;
+
+            @media screen and (min-width: 768px) {
+                margin: 116px 0 90px 172px;
+                font-size: 24px;
+            }
         }
 
         &:nth-child(2) {
             margin-left: 16px;
             display: flex;
             gap: 24px;
+
+            @media screen and (min-width: 768px) {
+                margin-left: 80px;
+                margin-bottom: 45px;
+                gap: 26px;
+            }
         }
+
         &:nth-child(3) {
             margin-left: 20px;
+            @media screen and (min-width: 768px) {
+              margin-left: 80px;
+            }
         }
 
     }
@@ -67,18 +94,41 @@
     &__pic {
         width: 58px;
         height: 119px;
+
+        @media screen and (min-width: 768px) {
+            width: 72px;
+            height: 159px;
+        }
     }
 
     &__list2 {
         margin-bottom: 45px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 60px;
+        }
     }
 
     &__pic2 {
         margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+            width: 129px;
+        }
+    }
+
+    &__img2 {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     &__txt {
         font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
     }
 
     &__link3 {
@@ -93,7 +143,12 @@
         border: 2px solid #000;
         border-radius: 50%;
         position: relative;
-        
+
+        @media screen and (min-width: 768px) {
+            width: 60px;
+            height: 60px;
+        }
+
         &::before {
             content: '';
             width: 30px;
@@ -104,11 +159,22 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @media screen and (min-width: 768px) {
+                width: 36px;
+                height: 36px;
+            }
         }
     }
+
     &__box {
         font-weight: 700;
+
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
     }
+
     &__span {
         margin-bottom: 15px;
         display: flex;
@@ -116,6 +182,10 @@
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.15em;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
     }
-    
+
 }
