@@ -71,6 +71,9 @@
         width: 132.43px;
         margin: 0 auto;
         padding-top: 20px;
+        @media screen and (min-width: 768px) {
+          width: 170px;
+        }
     }
 
     &__list {
@@ -85,6 +88,10 @@
             @media screen and (min-width: 768px) {
                 margin: 116px 0 90px 172px;
                 font-size: 24px;
+            }
+            @media screen and (min-width: 1024px) {
+              margin-top: 10.74074vh;
+              margin-bottom: 8.33333vh;
             }
         }
 
@@ -126,6 +133,11 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 60px;
         }
+        // &:nth-child(2){
+        //     @media screen and (min-width: 1024px) {
+        //       margin-bottom: 8.33333vh;
+        //     }
+        // }
     }
 
     &__pic2 {
