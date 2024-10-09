@@ -6,22 +6,46 @@
     &__ttl {
         width: 132.43px;
         margin: 0 auto 50px;
+
+        @media screen and (min-width: 768px) {
+            width: 170px;
+            margin-bottom: 65px;
+        }
     }
+
     &__box {
         margin-bottom: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 34px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 65px;
+            gap: 60px;
+        }
     }
+
     &__txt {
         @include jptxt(12px, 400, 1);
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
     }
+
     &__copy {
         margin-bottom: 24px;
         text-align: center;
+        @media screen and (min-width: 768px) {
+          margin-bottom: 45px;
+        }
     }
+
     &__small {
         @include jptxt(10px, 400, 1);
+        @media screen and (min-width: 768px) {
+          font-size: 12px;
+        }
     }
 }
