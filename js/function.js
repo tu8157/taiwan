@@ -1,7 +1,5 @@
 $(function () {
   // ここにjQueryを記述
-
-
 });
 
 
@@ -69,5 +67,22 @@ btn.addEventListener('click', function () {
     bodyFix()
   }else {
     bodyFixReset()
+  }
+});
+
+
+const WH = window.innerHeight;
+window.addEventListener('scroll', function(){
+  const down = document.getElementById('scrollDown');
+  const top = document.getElementById('scrollTop');
+  let ST = window.scrollY;
+  if(ST >= WH * 0.5) {
+    down.classList.add('nonView');
+    top.classList.add('view')
+  }else {
+    down.classList.remove('nonView');
+    top.classList.remove('view')
+    down.classList.add('.view');
+    top.classList.add('.nonView')
   }
 });

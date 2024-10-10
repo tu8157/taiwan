@@ -13,3 +13,13 @@
 .translateNav {
     transform: translateX(0);
 }
+
+.view {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nonView {
+    opacity: 0;
+    pointer-events: none;
+}

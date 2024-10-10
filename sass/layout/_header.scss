@@ -8,11 +8,11 @@
         margin: 0 auto;
         padding-top: 20px;
         z-index: 2;
-        
+
         @media screen and (min-width: 768px) {
             width: 170px;
         }
-        
+
         @media screen and (min-width: 1024px) {
             width: 11.77083vw;
             min-width: 170px;
@@ -91,13 +91,42 @@
             }
         }
     }
-    .scroll {
-        display: none;
-        @media screen and (min-width: 1024px) {
-          display: block;
-          writing-mode: vertical-lr;
+}
+
+.scroll {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+        writing-mode: vertical-lr;
+    }
+    
+    &__down,
+    &__top {
+        position: fixed;
+        bottom: 30px;
+        right: 44px;
+        transition: 1s;
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background: #000;
+            position: absolute;
         }
-        &__down {
+    }
+    &__down {
+        &::after{
+            top: 0;
+            animation: down 2.5s ease-in-out infinite;
+        }
+    }
+    &__top {
+        opacity: 0;
+        &::after {
+            bottom: 0;
+            animation: up 2.5s ease-in-out infinite;
         }
     }
 }
