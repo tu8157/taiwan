@@ -91,4 +91,13 @@
             }
         }
     }
+    .scroll {
+        display: none;
+        @media screen and (min-width: 1024px) {
+          display: block;
+          writing-mode: vertical-lr;
+        }
+        &__down {
+        }
+    }
 }

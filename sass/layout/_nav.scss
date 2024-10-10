@@ -65,6 +65,9 @@
         width: 30%;
         height: 100vh;
         background: $d-pink;
+        @media screen and (min-width: 1024px) {
+          width: 40%;
+        }
     }
 
     &__ttl {
