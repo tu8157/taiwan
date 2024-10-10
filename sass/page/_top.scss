@@ -150,6 +150,7 @@
             row-gap: 35px;
             background-image: url(../images/zenzu_tb.svg);
         }
+
         @media screen and (min-width: 1124px) {
             margin-bottom: 125px;
             padding-top: 26.51041vw;
@@ -158,6 +159,7 @@
             background-image: url(../images/zenzu_pc.svg);
             row-gap: 60px;
         }
+
         @media screen and (min-width: 1415px) {
             padding: 26.51041vw 11.2291vw 325px;
             column-gap: 5.72916vw;
@@ -291,9 +293,10 @@
                 writing-mode: vertical-rl;
                 text-align: start;
             }
+
             @media screen and (min-width: 1024px) {
-              font-size: 16px;
-              line-height: 2.5;
+                font-size: 16px;
+                line-height: 2.5;
             }
         }
 
@@ -307,13 +310,13 @@
                 width: 255px;
                 margin-bottom: 45px;
             }
+
             @media screen and (min-width: 1024px) {
-              width: 300px;
-              margin-bottom: 66px;
+                width: 300px;
+                margin-bottom: 66px;
             }
-            @media screen and (min-width: 1024px) {
-              
-            }
+
+            @media screen and (min-width: 1024px) {}
         }
 
         &__subttl {
@@ -346,8 +349,9 @@
             &:nth-child(2) {
                 width: fit-content;
             }
+
             @media screen and (min-width: 1024px) {
-              font-size: 16px;
+                font-size: 16px;
             }
         }
 
@@ -381,10 +385,12 @@
                 display: flex;
                 justify-content: center;
             }
+
             @media screen and (min-width: 1400px) {
                 gap: 5vw;
             }
         }
+
         &__container {
             margin: 0 30px 60px;
             display: flex;
@@ -404,8 +410,9 @@
             align-items: center;
             text-align: center;
             @include jptxt(16px, 400, 1);
+
             @media screen and (min-width: 1024px) {
-              font-size: 18px;
+                font-size: 18px;
             }
 
             &pic {
@@ -482,7 +489,7 @@
             max-width: 537px;
         }
     }
-
+    
     .refe {
         margin-bottom: 70px;
         padding-top: 117px;
@@ -492,6 +499,7 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        position: relative;
 
         @media screen and (min-width: 768px) {
             padding: 255px 66px 224px;
@@ -501,11 +509,22 @@
             justify-content: center;
             background-image: url(../images/book_bg.svg);
         }
+
         @media screen and (min-width: 1024px) {
             margin-bottom: 170px;
             background: url(../images/book_bg.svg) center center / contain no-repeat;
             gap: 60px;
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 30vh;
+                position: absolute;
+                top: 0;
+                background: url(../images/naname.svg) center center / cover;
+            }
         }
+
 
         &__ttl {
             width: fit-content;
@@ -522,8 +541,9 @@
                 width: 43px;
                 display: block;
             }
+
             @media screen and (min-width: 1024px) {
-              width: 60px;
+                width: 60px;
             }
 
             &img {
@@ -541,9 +561,10 @@
                 width: 240px;
                 margin-right: 30px;
             }
+
             @media screen and (min-width: 1024px) {
-              width: 354px;
-              margin-right: 40px;
+                width: 354px;
+                margin-right: 40px;
             }
         }
 
@@ -562,8 +583,9 @@
                 max-width: 330px;
                 padding: 0;
             }
+
             @media screen and (min-width: 1024px) {
-              width: 387px;
+                width: 387px;
             }
         }
 
@@ -576,8 +598,9 @@
         &__subttl {
             margin-bottom: 32px;
             @include jptxt(28px, 500, 1);
+
             @media screen and (min-width: 1024px) {
-              font-size: 36px;
+                font-size: 36px;
             }
         }
 
@@ -592,8 +615,9 @@
 
         &__txt {
             @include jptxt;
+
             @media screen and (min-width: 1024px) {
-              font-size: 16px;
+                font-size: 16px;
             }
 
         }
