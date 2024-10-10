@@ -432,6 +432,12 @@
 
         &__link {
             position: relative;
+            &:hover .course__more::after{
+                transform: translateX(-7px);
+                @media screen and (min-width: 1024px) {
+                    transform: translateX(-9px);
+                }
+            }
         }
 
         &__pic {
@@ -476,6 +482,7 @@
                 background: $black;
                 position: absolute;
                 left: 43px;
+                transition: .3s;
 
                 @media screen and (min-width: 768px) {
                     width: 20px;
