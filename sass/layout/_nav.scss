@@ -41,7 +41,7 @@
         transform: translateY(4px);
 
         @media screen and (min-width: 1024px) {
-            transform: translateY( 5px);
+            transform: translateY(5px);
         }
     }
 }
@@ -62,11 +62,14 @@
     }
 
     &__bg {
-        width: 30%;
-        height: 100vh;
-        background: $d-pink;
+        @media screen and (min-width: 768px) {
+            width: 30%;
+            height: 100vh;
+            background: $d-pink;
+        }
+
         @media screen and (min-width: 1024px) {
-          width: 40%;
+            width: 40%;
         }
     }
 
@@ -74,8 +77,9 @@
         width: 132.43px;
         margin: 0 auto;
         padding-top: 20px;
+
         @media screen and (min-width: 768px) {
-          width: 170px;
+            width: 170px;
         }
     }
 
@@ -92,14 +96,16 @@
                 margin: 116px 0 90px 172px;
                 font-size: 24px;
             }
+
             @media screen and (min-width: 1024px) {
-              margin-top: 10.74074vh;
-              margin-bottom: 8.33333vh;
+                margin-top: 10.74074vh;
+                margin-bottom: 8.33333vh;
             }
         }
 
         &:nth-child(2) {
             margin-left: 16px;
+            margin-bottom: 75px;
             display: flex;
             gap: 24px;
 
@@ -136,6 +142,7 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 60px;
         }
+
         // &:nth-child(2){
         //     @media screen and (min-width: 1024px) {
         //       margin-bottom: 8.33333vh;
@@ -145,6 +152,7 @@
 
     &__pic2 {
         margin-bottom: 15px;
+        width: 117px;
 
         @media screen and (min-width: 768px) {
             width: 129px;
@@ -163,8 +171,9 @@
         @media screen and (min-width: 768px) {
             font-size: 16px;
         }
+
         @media screen and (min-width: 1024px) {
-          font-size: 18px;
+            font-size: 18px;
         }
     }
 
